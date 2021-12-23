@@ -108,14 +108,6 @@ WITH cte_ranking_gen AS
  FROM PokemonProject..Pokemon
  GROUP BY Legendary
 
- --Max HP Min HP
- SELECT [Name], [Type 1], [Type 2], MAX(HP)
- FROM PokemonProject..Pokemon
- group by MAX(HP)
-
-SELECT (select MAX(HP) as maxim, [Name]  from PokemonProject..Pokemon)
-from PokemonProject..Pokemon pp
-GROUP BY [Name]
-
+ 
 
 
